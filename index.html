@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Static App</title>
+    <title>Simple Static Web App</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            text-align: center;
+            padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            text-align: center;
         }
         h1 {
             color: #0056b3;
@@ -21,54 +20,39 @@
             height: auto;
             border: 2px solid #ccc;
             border-radius: 8px;
-            margin-bottom: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        #output {
-            margin-top: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            background-color: #fff;
-            border-radius: 5px;
-            max-width: 600px;
+            margin-bottom: 20px;
+            display: block; /* Ensures it takes up its own line */
             margin-left: auto;
             margin-right: auto;
+        }
+        #output {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 600px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             text-align: left;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            line-height: 1.6;
         }
         #output p {
-            margin: 0 0 10px 0;
-        }
-        #output p:last-child {
-            margin-bottom: 0;
+            line-height: 1.6;
+            margin: 0;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <h1>My Awesome Static Web Page</h1>
 
-    <!-- Image loaded from a public placeholder service -->
-    <img src="https://picsum.photos/seed/githubpagesapp/600/300" alt="A randomly generated scenic image">
+    <h1>My First Static Web App</h1>
+
+    <img src="https://via.placeholder.com/600x300?text=Hello+from+GitHub+Pages" alt="A placeholder image with a welcome message">
 
     <div id="output">
-        <p>This section serves as an output area, displaying information relevant to our simple static web app.</p>
-        <p>Above, you can see an image loaded directly into the HTML. This entire page is built with pure HTML, CSS, and a touch of JavaScript to demonstrate basic functionality.</p>
-        <p>It's designed to be minimal, functional, and easily deployable on platforms like GitHub Pages.</p>
+        <p>This is a simple paragraph of text displayed below the image. It demonstrates how to create a basic static HTML page that works perfectly on GitHub Pages.</p>
+        <p>We've included a heading, an image, and a designated output area to fulfill the requirements. No complex JavaScript or external frameworks are used, keeping it minimal and functional!</p>
     </div>
 
-    <script>
-        // A small JavaScript snippet to demonstrate JS inclusion and functionality.
-        // This will log a message to the browser's console when the page loads.
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log("My Simple Static App loaded successfully!");
-            const outputDiv = document.getElementById('output');
-            if (outputDiv) {
-                console.log("The output area is present on the page.");
-                // You could dynamically add content here if needed,
-                // but for this brief, direct HTML content is sufficient.
-            }
-        });
-    </script>
 </body>
 </html>
